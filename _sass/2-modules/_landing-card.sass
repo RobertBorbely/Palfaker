@@ -1,0 +1,23 @@
+.home
+  background: $light-gray
+
+  .wrapper
+    +outer-container
+    padding: 5em 0
+
+    .landing-card
+      text-align: center
+      background: white
+      box-shadow: 0px 4px 12.61px 0.39px rgba(0, 0, 0, 0.35)
+      padding: 2.5em
+
+      +media($large-screen)
+        +span-columns(4)
+        +shift(1)
+
+      &:last-child
+        +media($large-screen)
+          +shift(2)
+      
+    
+

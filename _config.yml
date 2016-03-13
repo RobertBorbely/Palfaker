@@ -1,0 +1,13 @@
+# Site settings
+title: Palfaker
+email: palfaker@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Üdvözlöm a Pal-Fa-Ker hivatalos honlapján. Cégünk több éves tapasztalattal
+  rendelkezik csomagoló anyagok gyártásában többek között raklap, kábeldob gyártásban.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://palfaker.hu" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
