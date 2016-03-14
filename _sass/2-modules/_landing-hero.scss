@@ -12,12 +12,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 560px;
+  margin-top: -60px;
 
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 560px;
     @include display(flex);
+    margin-top: -60px;
 
     .hero-logo img {
       height: 4em;
@@ -38,11 +40,11 @@
         
         h1 {
           color: $hero-color;
-          font-size: 1.6em;
+          font-size: 2.4em;
           margin-bottom: 0.5em;
 
           @include media($large-screen) {
-            font-size: 1.8em;
+            font-size: 5em;
           }
         }
 

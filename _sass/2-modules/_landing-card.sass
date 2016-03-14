@@ -15,9 +15,45 @@
         +span-columns(4)
         +shift(1)
 
+      +media($medium-screen)
+        +span-columns(5)
+        +shift(1)
+
+      +media(max-width $small-screen)
+        margin: 0 20px 50px 20px
+
+      +media(min-width $small-screen max-width $medium-screen)
+        margin: 0 30px 50px 30px
+
       &:last-child
         +media($large-screen)
           +shift(2)
+
+        +media($medium-screen)
+          margin-right: 2.35765% !important
+          +shift(0)
+
+        +media(max-width $small-screen)
+          margin: 0 20px
+
+        +media(min-width $small-screen max-width $medium-screen)
+          margin: 0 30px
+
+      .landing-title
+        font-size: 2em
+
+      .landing-content
+        margin-bottom: 50px
+
+      .fa
+        color: $light-green
+        margin-bottom: 30px
+
+
+     
+
+
+
       
     
 

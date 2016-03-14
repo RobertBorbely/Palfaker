@@ -4,6 +4,9 @@ email: palfaker@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Üdvözlöm a Pal-Fa-Ker hivatalos honlapján. Cégünk több éves tapasztalattal
   rendelkezik csomagoló anyagok gyártásában többek között raklap, kábeldob gyártásban.
+credentials: Design and created by Borbély Róbert
+production: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A explicabo iure debitis nihil enim! Omnis reiciendis porro iusto dolor est error suscipit nisi mollitia possimus, tempora, odit corrupti incidunt quis!
+rental: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://palfaker.hu" # the base hostname & protocol for your site
 twitter_username: jekyllrb

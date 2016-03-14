@@ -5,9 +5,10 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
+  $navigation-background: transparent;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
+  $navigation-fixed-color-hover: black;
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
@@ -17,6 +18,7 @@ header.navigation {
   $navigation-active-link-color: transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
+  $navigation-fixed-color: lighten(black, 30%);
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
@@ -24,12 +26,61 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  @include transition(all 0.3s ease-in-out);
+
+  &.fixedNav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    color: $navigation-fixed-color;
+
+    @include media ($horizontal-bar-mode){
+      background-color: white;
+      box-shadow: 0px 4px 12.61px 0.39px rgba(0, 0, 0, 0.35);
+    }
+
+    .navigation-menu-button {
+      color: $light-green;
+      border: 1px solid $light-green;
+      border-radius: 50%;
+      line-height: 25px;
+      height: 50px;
+      width: 50px;
+      padding: 12.5px;
+      text-align: center;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+
+      @include media ($horizontal-bar-mode){
+        color: $navigation-fixed-color;
+      }
+    }
+
+    .logo {
+      color: $navigation-fixed-color;
+    }
+
+    ul li.nav-link {
+      a {
+        color: $navigation-fixed-color;
+
+        &:focus,
+        &:hover {
+          color: $navigation-fixed-color-hover;
+        }
+      }
+    }
+  }
 
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
-    position: relative;
+    position: absolute;
     z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .logo {
@@ -51,7 +102,7 @@ header.navigation {
     color: $navigation-color;
     display: block;
     float: right;
-    line-height: $navigation-height;
+    line-height: 40px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -76,7 +127,7 @@ header.navigation {
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
@@ -90,7 +141,9 @@ header.navigation {
     z-index: 9999;
 
     &.show {
-      display: block;
+      @include media($horizontal-bar-mode) {
+        display: block;
+      } 
     }
 
     @include media ($horizontal-bar-mode) {
@@ -125,6 +178,7 @@ header.navigation {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      font-weight: 700;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
@@ -335,5 +389,83 @@ header.navigation {
         display: block;
       }
     }
+  }
+}
+
+.sliding-panel-content {  
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $sliding-panel-border-color: $dark-gray;
+  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+  $sliding-panel-color: #fff;
+  $sliding-panel-border: 1px solid $sliding-panel-border-color;
+  $sliding-panel-background-hover: $action-color;
+  $sliding-panel-color-hover: #fff;
+  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+
+  @include position(fixed, 0px auto 0px 0px);
+  @include size(220px 100%);
+  @include transform(translateX(-220px));
+  @include transition(all 0.25s linear);
+  background: $sliding-panel-background;
+  z-index: 999999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li a {
+    border-bottom: $sliding-panel-border;
+    color: $sliding-panel-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+
+    &:focus {
+      background-color: $sliding-panel-background-focus;
+    }
+
+    &:hover {
+      background-color: $sliding-panel-background-hover;
+      color: $sliding-panel-color-hover;
+    }
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+  }
+}
+
+.sliding-panel-fade-screen {
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.sliding-panel-button {
+  padding: 10px 16px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
+  img {
+    height: 1.3em;
   }
 }

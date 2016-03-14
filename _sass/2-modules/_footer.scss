@@ -1,8 +1,6 @@
 .footer {
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
@@ -25,20 +23,36 @@
     @include display(flex);
     @include justify-content(center);
     @include flex-wrap(wrap);
+    max-width: 1200px;
     margin-bottom: $base-spacing;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   ul {
-    @include flex-basis(13em);
+    @include flex-basis(50%);
     @include flex-shrink(0);
     margin-bottom: $base-spacing * 2;
-    padding: 0;
+    padding: 0 30px;
   }
 
   li {
     line-height: 1.5em;
     list-style: none;
-    text-align: center;
+    // text-align: center;
+    color: white;
+    padding: 5px 0;
+
+    .fa-phone,
+    .fa-user,
+    .fa-map-marker {
+      padding-right: 10px;
+      font-size: 20px;
+    }
+
+    .fa-facebook {
+      color: $footer-background;
+    }
   }
 
   li a {
@@ -53,7 +67,7 @@
 
   li h3 {
     color: $footer-color;
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 0.4em;
   }  
 
@@ -71,4 +85,37 @@
     max-width: 35em;
     text-align: center;
   }
+}
+
+#map_canvas {
+    @include flex-basis(100%);
+    @include flex-shrink(0);
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+    height: 300px;
+
+    @include media($medium-screen) {
+      @include flex-basis(50%);
+    }
+}
+
+#map_canvas img { 
+  max-width: none; 
+// to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
 }
