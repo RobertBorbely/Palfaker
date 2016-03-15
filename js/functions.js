@@ -1,4 +1,7 @@
 (function($){
+  var windowHeight = document.documentElement.clientHeight,
+      $fullPicture = $(".full-picture"),
+      $heroOverlay = $(".full-picture > .hero-overlay");
 
   function bindScroll(height){
     var $nav = $(".navigation");
@@ -11,6 +14,12 @@
       }
     });
   }
+  
+  function setFullPicture() {
+    $fullPicture.css("height", windowHeight);
+    $heroOverlay.css("height", windowHeight);
+  }
+  
 
 
   $(document).ready(function(){
@@ -19,6 +28,7 @@
       e.preventDefault();
     });
     bindScroll(200);
+    setFullPicture();
   });
 
 })(jQuery);

@@ -1,0 +1,28 @@
+.card-container
+  background-color: $light-gray
+  
+  .wrapper
+    +outer-container
+    padding: 50px 20px
+    
+    .production-card
+      float: left
+      background-color: white
+      padding: 20px
+      box-shadow: $box-shadow
+      
+      
+      +media($large-screen)
+        +span-columns(3)
+        
+      +media(max-width $medium-screen)
+        +span-columns(6)
+        +omega(2)
+        margin: 15px 2.35765% 15px 0
+        
+      +media(min-width $small-screen max-width $medium-screen)
+        +span-columns(6)
+        +omega(2)
+        
+      +media(max-width $small-screen)
+        +span-columns(12)

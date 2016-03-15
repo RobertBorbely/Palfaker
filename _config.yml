@@ -8,9 +8,12 @@ credentials: Designed and created by Borbély Róbert
 production: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A explicabo iure debitis nihil enim! Omnis reiciendis porro iusto dolor est error suscipit nisi mollitia possimus, tempora, odit corrupti incidunt quis!
 rental: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "https://palfaker-gulizaah.c9users.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+
+port: 8080
+host: 0.0.0.0
 
 # Build settings
 markdown: kramdown

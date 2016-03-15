@@ -36,7 +36,7 @@ header.navigation {
 
     @include media ($horizontal-bar-mode){
       background-color: white;
-      box-shadow: 0px 4px 12.61px 0.39px rgba(0, 0, 0, 0.35);
+      box-shadow: $box-shadow;
     }
 
     .navigation-menu-button {
