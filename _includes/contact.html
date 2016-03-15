@@ -1,0 +1,22 @@
+<section id="contact" class="contact-container">
+  <div class="wrapper">
+    <form id="mail" action="//formspree.io/respectsas@gmail.com"
+      method="POST">
+      
+      <label for="name">Kapcsolattartó neve:</label>
+      <input type="text" name="name">
+      
+      <label for="_replyto">E-mail cím:</label>
+      <input type="email" name="_replyto">
+      
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_next" value="{{ site.url }}" />
+      
+      <label for="content">Üzenet</label>
+      <textarea name="content" form="mail"></textarea>
+      
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</section>
