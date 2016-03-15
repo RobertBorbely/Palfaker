@@ -1,0 +1,64 @@
+.custom-order
+  background-color: $dark-green
+  +size(100% 200px)
+  
+  +media(max-width $small-screen)
+    height: auto
+  
+  +media(min-width $small-screen max-width $medium-screen)
+    height: auto
+    
+  .wrapper
+    @include align-items(center)
+    @include display(flex)
+    @include justify-content(center)
+    @include flex-wrap(wrap)
+    +outer-container
+    height: 200px
+    color: white
+    padding: 3.125em 2em
+    
+    +media(max-width $small-screen)
+      height: auto
+      
+    +media(min-width $small-screen max-width $medium-screen)
+      height: auto
+    
+    .text-container
+      @include flex-basis(100%)
+      @include flex-shrink(0)
+      
+      +media($medium-screen)
+        @include flex-basis(70%)
+        
+      +media(max-width $small-screen)
+        margin-bottom: 50px
+        
+      +media(min-width $small-screen max-width $medium-screen)
+        margin-bottom: 50px
+        
+      h3
+        font-size: 1.75em
+        
+      p
+        color: lighten(white, 30%)
+        font-weight: 300
+        
+    .link-container
+      @include flex-basis(100%)
+      @include flex-shrink(0)
+      text-align: center
+      
+      .btn
+        border-color: white
+        color: white
+        
+        &:hover
+          color: $dark-green
+          background-color: white
+      
+      +media($medium-screen)
+        @include flex-basis(30%)
+  
+  
+    

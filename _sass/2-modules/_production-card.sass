@@ -3,14 +3,14 @@
   
   .wrapper
     +outer-container
-    padding: 50px 20px
+    padding: 5em 2em
     
     .production-card
       float: left
       background-color: white
-      padding: 20px
+      padding: 2.5em
       box-shadow: $box-shadow
-      
+      text-align: center
       
       +media($large-screen)
         +span-columns(3)
@@ -26,3 +26,12 @@
         
       +media(max-width $small-screen)
         +span-columns(12)
+        
+        
+      h2
+        font-size: 2em
+        
+        
+      .fa
+        color: $light-green
+        margin-bottom: 30px
