@@ -35,6 +35,17 @@
       padding: 3.5em;
       text-align: center;
 
+      .hero-btn {
+        border-color: white;
+        color: white;
+        background-color: transparent;
+
+        &:hover {
+          color: black;
+          background-color: #fff;
+        }
+      }
+
       .hero-copy {
         text-align: center;
         

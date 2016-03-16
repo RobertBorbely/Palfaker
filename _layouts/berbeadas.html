@@ -1,3 +1,21 @@
 ---
 layout: default
 ---
+
+<div id="about" class="hero" style="background-image: url({{ site.url }}{{ page.landing-picture }})">
+  <div class="hero-overlay">
+    <div class="hero-inner">
+      <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+  " alt="Logo Image"></a>
+      <div class="hero-copy">
+        <h1>Pal-fa-ker</h1>
+        <p>{{ site.description }}</p>
+        <a href="#contact" class="btn hero-btn">Vegye fel velünk a kapcsolatot!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include rent-card.html %}
+{% include rent-banner.html %}
+{% include contact.html %}
