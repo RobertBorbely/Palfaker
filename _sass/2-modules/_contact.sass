@@ -1,12 +1,29 @@
 .contact-container
   background-color: $light-gray
-  padding: 5em 0
   width: 100%
   
   .wrapper
     +outer-container
+    text-align: center
+    padding: 5em 2.5em
+    
+    h2
+      font-size: 2em
+      
+    hr
+      border: 3px solid rgba(0, 0, 0, 0.3)
+      border-radius: 20px
+      margin: 2.5em auto
+      width: 100px
     
     form
+      +span-columns(12)
+      text-align: left
+      
+      +media($medium-screen)
+        +span-columns(8)
+        +shift(2)
+        
       input
         box-shadow: $box-shadow
         
@@ -14,3 +31,16 @@
         max-width: 100%
         min-height: 250px
         box-shadow: $box-shadow
+        
+      input[type="submit"]
+        border-radius: 30px
+        background-color: $light-green
+        color: white
+        +transition(all 0.3s ease-in-out)
+        
+        &:hover
+          background-color: $dark-green
+          
+        
+      .submit-group
+        text-align: center

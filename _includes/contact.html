@@ -1,5 +1,7 @@
 <section id="contact" class="contact-container">
   <div class="wrapper">
+    <h2 class="contact-title">Kapcsolat</h2>
+    <hr>
     <form id="mail" action="//formspree.io/respectsas@gmail.com"
       method="POST">
       
@@ -15,8 +17,11 @@
       <label for="content">Üzenet</label>
       <textarea name="content" form="mail"></textarea>
       
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" value="Send">
+      <div class="submit-group">
+        <input type="text" name="_gotcha" style="display:none" />
+        <input class="btn" type="submit" value="Küldés">
+      </div>
+      
     </form>
   </div>
 </section>
