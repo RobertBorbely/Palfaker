@@ -1,9 +1,13 @@
 ---
 layout: default
+type: landing
 ---
+
 {% include landing-hero.html %}
 <div class="home">
-  <div class="wrapper">
+  <div  id="services" class="wrapper">
+    <h2 class="landing-title">Tudjon meg többet szolgáltatásainkról!</h2>
+    <hr>
     <div class="landing-card">
       <i class="fa fa-cogs fa-4x"></i>
       <h2 class="landing-title">
@@ -25,22 +29,5 @@ layout: default
       <a href="{{ site.url }}/berbeadas/" class="btn">Bérbeadás</a>
     </div>
   </div>
-  
-
-  <!-- <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
+  <!--{% include contact.html %}-->
 </div>
