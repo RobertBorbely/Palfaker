@@ -35,6 +35,10 @@
       padding: 3.5em;
       text-align: center;
 
+      @include media(max-width $small-screen) {
+        padding: 1em;
+      }
+
       .hero-btn {
         border-color: white;
         color: white;
@@ -43,6 +47,9 @@
         &:hover {
           color: black;
           background-color: #fff;
+        }
+        @include media(max-width $small-screen) {
+          font-size: 12px;
         }
       }
 

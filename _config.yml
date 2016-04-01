@@ -2,13 +2,14 @@
 title: Palfaker
 email: palfaker@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Üdvözlöm a Pal-Fa-Ker hivatalos honlapján. Cégünk több éves tapasztalattal
-  rendelkezik csomagoló anyagok gyártásában többek között raklap, kábeldob gyártásban.
+  Üdvözöljük a Pal-Fa-Ker hivatalos honlapján! Cégünk sok éves tapasztalattal rendelkezik faipari termékek és fa csomagolóanyagok gyártásában illetve
+  faházak bérdeadásában.
 credentials: Designed and created by Borbély Róbert
-production: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A explicabo iure debitis nihil enim! Omnis reiciendis porro iusto dolor est error suscipit nisi mollitia possimus, tempora, odit corrupti incidunt quis!
-rental: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://robertborbely.github.io/Palfaker" # the base hostname & protocol for your site
+production: Cégünk fő profilja a fa csomagolóanyagok előállítása. Egyéni egyeztetés után bármilyen méretű fa csomagolóanyagot képesek vagyunk előállítani.
+production-description: Cégünk képes bármilyen paraméterrel rendelkező faipari alapanyag, illetve fa csomagolóanyag előállítására. Többek között raklapok, kábeldobok, tároló dobozok gyártásával foglalkozunk de csak a megrendelő képzelete szabhatárt képességeinknek!
+rental: Általunk gyártott közművesített faházak bérbevételére is van lehetőség. Ezek a hazák tökéletesek fesztiválon való elhelyezésre.
+baseurl: "/Palfaker" # the subpath of your site, e.g. /blog/
+url: "https://robertborbely.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -17,3 +18,5 @@ host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
+
+
