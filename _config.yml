@@ -8,7 +8,7 @@ credentials: Designed and created by Borbély Róbert
 production: Cégünk fő profilja a fa csomagolóanyagok előállítása. Egyéni egyeztetés után bármilyen méretű fa csomagolóanyagot képesek vagyunk előállítani.
 production-description: Cégünk képes bármilyen paraméterrel rendelkező faipari alapanyag, illetve fa csomagolóanyag előállítására. Többek között raklapok, kábeldobok, tároló dobozok gyártásával foglalkozunk de csak a megrendelő képzelete szabhatárt képességeinknek!
 rental: Általunk gyártott közművesített faházak bérbevételére is van lehetőség. Ezek a hazák tökéletesek fesztiválon való elhelyezésre.
-baseurl: "/Palfaker" # the subpath of your site, e.g. /blog/
+baseurl: "/Palfaker/" # the subpath of your site, e.g. /blog/
 url: "https://robertborbely.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
