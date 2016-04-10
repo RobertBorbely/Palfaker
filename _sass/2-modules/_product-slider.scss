@@ -32,9 +32,16 @@
     @include omega();
 
     @media all and (min-width: $medium-screen){
+      width: 100% !important;
+      @include omega();
+    }
+
+    @media all and (max-width: 1024px) {
       @include span-columns(6);
       @include omega();
     }
+
+    
 
     img {
       width: 100%;
