@@ -41,7 +41,7 @@
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
-          zoom: 13,
+          zoom: 15,
           scrollwheel: false,
           draggable: true,
           disableDefaultUI: true,
@@ -52,9 +52,9 @@
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">Palfaker</h1>'+
           '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
+          '<p>Kálvária sgt. 87/a</p>'+
           '</div>'+
           '</div>',
         infowindow = new google.maps.InfoWindow({
@@ -64,7 +64,7 @@
         marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title: 'thoughtbot (Sweden)'
+          title: 'Pal-fa-ker (Szeged)'
         });
 
     return {

@@ -10,7 +10,7 @@ production-description: Cégünk képes bármilyen paraméterrel rendelkező fai
 rent-description: Vállalatunk több éve foglalkozik faházak bérbeadásával. Büszkék vagyunk, hogy elmondhatjuk évek óta több szegedi rendezvényen megtalálhatóak voltak bérleményeink.
 rental: Általunk gyártott közművesített faházak bérbevételére is van lehetőség. Ezek a hazák tökéletesek fesztiválon való elhelyezésre.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "www.palfaker.hu" # the base hostname & protocol for your site
+url: "http://www.palfaker.hu" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
