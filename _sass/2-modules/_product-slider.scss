@@ -31,13 +31,8 @@
     @include span-columns(12);
     @include omega();
 
-    @media all and (min-width: $medium-screen){
-      width: 100% !important;
-      @include omega();
-    }
-
-    @media all and (max-width: 1024px) {
-      @include span-columns(6);
+    @media all and (min-width: 769px){
+      width: 50%;
       @include omega();
     }
 
