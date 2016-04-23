@@ -2,13 +2,12 @@
 title: Palfaker
 email: palfaker@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Üdvözöljük a Pal-Fa-Ker hivatalos honlapján! Cégünk sok éves tapasztalattal rendelkezik faipari termékek és fa csomagolóanyagok gyártásában illetve
-  faházak bérdeadásában.
+  Cégünk fő profilja a fából készült csomagolóanyagok gyártása. Egyedi megrendelés esetén, képesek vagyunk bármilyen méretű fa csomagolóanyag előállítására !
 credentials: Designed and created by Borbély Róbert
 production: Cégünk fő profilja a fa csomagolóanyagok előállítása. Egyéni egyeztetés után bármilyen méretű fa csomagolóanyagot képesek vagyunk előállítani.
 production-description: Cégünk képes bármilyen paraméterrel rendelkező faipari alapanyag, illetve fa csomagolóanyag előállítására. Többek között raklapok, kábeldobok, tároló dobozok gyártásával foglalkozunk de csak a megrendelő képzelete szabhatárt képességeinknek!
 rent-description: Vállalatunk több éve foglalkozik faházak bérbeadásával. Büszkék vagyunk, hogy elmondhatjuk évek óta több szegedi rendezvényen megtalálhatóak voltak bérleményeink.
-rental: Általunk gyártott közművesített faházak bérbevételére is van lehetőség. Ezek a hazák tökéletesek fesztiválon való elhelyezésre.
+rental: Cégünk foglalkozik faházak, fabódék bérbeadásával. Az általunk gyártott faházakat úgy alakítottuk ki, hogy  tökéletesen megfeleljenek kültéri rendezvényeken történő árusításra .
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.palfaker.hu" # the base hostname & protocol for your site
 twitter_username: jekyllrb
