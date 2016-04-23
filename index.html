@@ -8,26 +8,27 @@ type: landing
   <div  id="services" class="wrapper">
     <h2 class="landing-title">Tudjon meg többet szolgáltatásainkról!</h2>
     <hr>
-    <div class="landing-card">
-      <i class="fa fa-cogs fa-4x"></i>
-      <h2 class="landing-title">
-        Gyártás
-      </h2>
-      <p class="landing-content">
-        {{ site.production }}
-      </p>
-      <a href="/gyartas/" class="btn">Tudjon meg többet!</a>
-    </div>
-    <div class="landing-card">
-      <i class="fa fa-home fa-4x"></i>
-      <h2 class="landing-title">
-        Bérbeadás
-      </h2>
-      <p class="landing-content">
-        {{ site.rental }}
-      </p>
-      <a href="/berbeadas/" class="btn">Tudjon meg többet!</a>
+    <div class="flex-container">
+      <div class="landing-card">
+        <i class="fa fa-cogs fa-4x"></i>
+        <h2 class="landing-title">
+          Gyártás
+        </h2>
+        <p class="landing-content">
+          {{ site.production }}
+        </p>
+        <a href="/gyartas/" class="btn">Tudjon meg többet!</a>
+      </div>
+      <div class="landing-card">
+        <i class="fa fa-home fa-4x"></i>
+        <h2 class="landing-title">
+          Bérbeadás
+        </h2>
+        <p class="landing-content">
+          {{ site.rental }}
+        </p>
+        <a href="/berbeadas/" class="btn">Tudjon meg többet!</a>
+      </div>
     </div>
   </div>
-  <!--{% include contact.html %}-->
 </div>

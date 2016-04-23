@@ -3,6 +3,11 @@
       $fullPicture = $(".full-picture"),
       $heroOverlay = $(".full-picture > .hero-overlay");
 
+  var height, width;
+  width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+  height = window.innerHeight > 0 ? window.innerHeight : screen.height;
+
+
   function bindScroll(height){
     var $nav = $(".navigation");
 
@@ -16,8 +21,8 @@
   }
   
   function setFullPicture() {
-    $fullPicture.css("height", windowHeight);
-    $heroOverlay.css("height", windowHeight);
+    $fullPicture.css("height", height);
+    $heroOverlay.css("height", height);
   }
   
   function smoothScroll() {
@@ -45,6 +50,14 @@
     bindScroll(200);
     setFullPicture();
     smoothScroll();
+
+    $(window).resize(function() {
+      width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+      height = window.innerHeight > 0 ? window.innerHeight : screen.height;
+      $fullPicture.css('height', height);
+      $heroOverlay.css('height', height);
+    });
   });
 
 })(jQuery);
+
