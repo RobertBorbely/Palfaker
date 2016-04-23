@@ -21,9 +21,10 @@
     @include display(flex);
     margin-top: -60px;
 
-    .hero-logo img {
-      height: 4em;
-      margin-bottom: 1em;
+    .hero-logo .icon-palfaker {
+      color: white;
+      font-size: 4.5em;
+      padding-left: 10px;
     }
 
     .hero-inner {

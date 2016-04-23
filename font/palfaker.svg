@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="palfaker" horiz-adv-x="1000" >
+<font-face font-family="palfaker" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="palfaker" unicode="&#xe800;" d="M836 225l0-5-3 0-5 5 0 28 7 6h1l0-32c0-1 0-2 0-2z m-2 254l0-32h0l-3 2-3 3-2-2 0 25 7 6 1 0c0-1 0-2 0-2z m0 2l-1 0-7-6 0 9 7 0c0-1 1-2 1-3z m-415-583l2 1 0-41c-1-2-3-3-4-5 0 0-1-1-2-2l1 49 0 0 3-2z m-6 5l2-3 0-49c0 0 0 0 0 0-2 1-4 2-6 3l0 1 0 78 3 0 3-2 0-25-2-3z m-4-48l0 0c1 0 1 0 0 0l0 0z m3 0c143 122 279 245 422 368m-425-98l-414 366v-274l413-367 0 0 0 0 0 0v0l424 369v16 22 16 19 16 20 16 20 16 23 15 23 16 22 16l-423-370z m0-14l410 357c0-6 0-13 0-22l-410-359v24z m0-38l410 357c0-7 0-14 0-22l-410-359v24z m0-38l411 357c0-7 0-15 0-23l-411-359v25z m0-39l411 358c0-7 0-14 0-21l-411-360v23z m0-36l411 357c0-6 0-13 1-19l-412-360v22z m0-36l412 358c0-7 0-13 0-19l-412-360v21z m0-60v25l412 359c0-9 0-16 1-23l-413-361z" horiz-adv-x="837" />
+</font>
+</defs>
+</svg>
